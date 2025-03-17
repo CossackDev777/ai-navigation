@@ -1,0 +1,12 @@
+.comp {
+  &__banner {
+    @apply border py-3 px-6 flex items-center rounded;
+    p {
+      @apply leading-[1.5] text-inherit;
+      font-family: inherit;
+    }
+    &_info {
+      @apply text-common;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+//CMSLink
+.btn {
+  &__cmslink {
+    @apply before:content-[''] tracking-wide;
+  }
+}
+.inline__link {
+  @apply inline-flex items-center gap-0.5;
+  .posc__article & {
+    @apply text-primary;
+  }
+  .material-symbols-outlined {
+    @apply hidden;
+    .posc__title & {
+      @apply inline-block;
+    }
+  }
+}

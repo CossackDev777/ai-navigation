@@ -1,0 +1,15 @@
+.posc__media {
+  &_caption {
+    @apply text-p-xs text-muted-foreground;
+    * {
+      font-size: inherit;
+    }
+  }
+}
+.media__block {
+  &_caption {
+    picture {
+      @apply mb-2;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.form {
+  button[type='submit'] {
+    @apply h-[50px] w-full rounded-full;
+  }
+  &__field {
+    &_minimal {
+      @apply relative;
+      label {
+        @apply text-p-sm leading-[2] transition-all;
+        &[data-shrink='true'] {
+          @apply text-2xs -translate-y-3.5;
+        }
+      }
+      &:not(.__select):not(.__checkbox) {
+        .field_wrap {
+          @apply border border-border;
+        }
+        label {
+          @apply select-none text-gray-400 absolute left-3 top-4;
+        }
+      }
+      &.__select {
+        label {
+          @apply hidden;
+        }
+        button {
+          @apply text-p-sm h-14;
+        }
+      }
+
+      input,
+      textarea {
+        @apply border-none pb-0;
+        &:focus {
+        }
+      }
+      input {
+        @apply h-14 pt-3.5;
+      }
+      textarea {
+        @apply pt-5;
+      }
+    }
+  }
+}

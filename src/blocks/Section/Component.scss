@@ -1,0 +1,17 @@
+.block__section {
+  p {
+    @apply font-body;
+  }
+  &_title {
+    @apply mb-8 lg:mb-12;
+    .sec_title {
+      @apply mx-0;
+    }
+    .sec_content & {
+      @apply lg:mb-8;
+    }
+  }
+  &_content {
+    @apply flex flex-col gap-8;
+  }
+}

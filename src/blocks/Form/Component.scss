@@ -1,0 +1,28 @@
+.form {
+  @apply flex flex-col gap-5;
+  &__fields {
+    @apply flex flex-row flex-wrap gap-5;
+  }
+  &__field {
+    @apply flex flex-col gap-1.5 mb-0;
+  }
+}
+.block {
+  &__form {
+    &_text {
+      @apply flex flex-col gap-4;
+    }
+    &_title {
+      @apply w-full items-center flex flex-col gap-4 md:justify-center md:flex-row-reverse;
+      .section__title {
+        @apply flex flex-col items-center md:items-start lg:flex-1;
+      }
+    }
+    &_fields {
+      @apply lg:min-h-[80vh];
+    }
+    &_message {
+      @apply flex flex-col gap-8;
+    }
+  }
+}

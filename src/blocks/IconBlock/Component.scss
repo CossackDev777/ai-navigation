@@ -1,0 +1,19 @@
+.icon-block {
+  //breakpoints sm
+  @apply sm:shadow-2xl sm:bg-white flex flex-col sm:flex-row sm:rounded-r-full sm:rounded-l-full max-sm:items-center max-sm:pb-4;
+  &__icon {
+    @apply rounded-full bg-light-20 w-[90px] h-[90px] md:w-[120px] md:h-[120px] p-4 flex items-center justify-center relative z-[1];
+  }
+  &__image {
+    @apply w-full;
+  }
+  &__content {
+    @apply px-6 pb-6 pt-8 sm:text-left sm:flex-1 md:p-4 lg:p-6 max-sm:bg-white max-sm:shadow-2xl max-sm:rounded-2xl max-sm:-mt-4 max-sm:w-full max-xs:max-w-[320px];
+  }
+  &__title {
+    @apply font-bold text-card-def text-primary;
+  }
+  &__text {
+    @apply text-card-vert text-neutral-600 whitespace-pre-wrap;
+  }
+}

@@ -1,0 +1,14 @@
+.posc__hero {
+  @apply -mt-[10rem] relative flex items-end;
+}
+.post {
+  &__title {
+    @apply mb-6 text-post-h1 font-bold;
+  }
+  &__hero {
+    &_date,
+    &_author {
+      @apply text-p-xs font-title;
+    }
+  }
+}

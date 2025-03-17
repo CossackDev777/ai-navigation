@@ -1,0 +1,22 @@
+.tags {
+  &__block {
+    @apply flex flex-col gap-6 lg:flex-row lg:gap-8 justify-center;
+  }
+  &__title {
+    @apply font-title text-page-h1 font-bold leading-tight text-third after:content-[''] inline-flex items-center gap-2;
+    &:after {
+      @apply block w-[20px] h-[1px] lg:w-[1px] lg:h-[20px] bg-secondary lg:rotate-[25deg] lg:ml-4;
+    }
+  }
+  &__list {
+    &_item {
+      @apply p-0;
+      a {
+        @apply px-3 py-0.5 inline-block rounded-2xl border-secondary text-third border;
+        &:hover {
+          @apply bg-primary text-primary-foreground;
+        }
+      }
+    }
+  }
+}

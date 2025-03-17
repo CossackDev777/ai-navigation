@@ -1,0 +1,14 @@
+.sec_titles {
+  @apply flex flex-col gap-2;
+  &.center {
+    @apply items-center;
+  }
+  h2 {
+    @apply mb-0;
+  }
+  .sec {
+    &_caption {
+      @apply font-title font-semibold text-secondary uppercase;
+    }
+  }
+}

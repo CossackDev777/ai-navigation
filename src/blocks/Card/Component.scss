@@ -1,0 +1,11 @@
+.card {
+  &__grid {
+    @apply shadow-2xl bg-white rounded-2xl overflow-hidden;
+  }
+  &__content {
+    @apply p-4 lg:p-6;
+  }
+  &__title {
+    @apply text-center text-basic font-bold text-card-vert whitespace-pre-wrap;
+  }
+}

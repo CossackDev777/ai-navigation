@@ -1,0 +1,24 @@
+.cta {
+  &__card {
+    @apply shadow-2xl text-left max-w-[800px] rounded-[30px] bg-light-20 border-transparent border px-4 py-6 lg:px-6 lg:py-8 xl:px-8 flex flex-col gap-8 md:flex-row md:justify-between md:items-center;
+    &_content {
+      .posc__title_h3 {
+        @apply text-third leading-snug text-post-h2 md:text-post-h3;
+        strong {
+          @apply text-primary;
+        }
+      }
+      p {
+        @apply mb-0;
+        &:not(:first-child) {
+          @apply mt-0;
+        }
+      }
+    }
+    &_links {
+      .btn__cmslink {
+        @apply rounded-full;
+      }
+    }
+  }
+}

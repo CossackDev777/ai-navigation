@@ -1,0 +1,16 @@
+.block {
+  &__richTextBlock {
+    .sec {
+      &_content {
+        @apply p-6 lg:p-8 xl:p-12;
+      }
+    }
+  }
+  &__richtext {
+    p {
+      &:not(:first-child) {
+        @apply mt-4;
+      }
+    }
+  }
+}

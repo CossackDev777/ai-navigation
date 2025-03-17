@@ -1,0 +1,73 @@
+.posc {
+  $selector: #{&};
+  &__subtitle {
+    &_label {
+      @apply text-p-sm font-bold inline-block bg-white text-third px-3 py-1 rounded-3xl;
+    }
+    + #{$selector} {
+      &__catchphrase {
+        @apply pt-2;
+      }
+    }
+  }
+  &__catchphrase {
+    strong {
+      @apply text-[150%] leading-[1.15] inline-block pb-1;
+    }
+    &.container {
+      @apply mx-0 px-0;
+    }
+  }
+}
+.banner {
+  $selector: #{&};
+  &__article {
+    @apply shadow-2xl overflow-hidden bg-card hover:cursor-pointer relative;
+    #{$selector} {
+      &__head {
+        @apply h-full;
+      }
+      &__body {
+        @apply flex flex-col justify-center absolute inset-0 text-white;
+        .posc__title {
+          @apply block;
+          strong {
+            color: inherit;
+          }
+        }
+      }
+    }
+    &_small {
+      #{$selector} {
+        &__body {
+          @apply items-center;
+        }
+      }
+    }
+    &_medium {
+      #{$selector} {
+        &__body {
+          @apply items-start;
+        }
+      }
+    }
+  }
+  &__overlay {
+    &_bg {
+      @apply absolute w-full h-full before:from-basic/80 before:to-transparent after:from-basic/100 after:to-basic/30 after:opacity-0;
+      &:before,
+      &:after {
+        @apply content-[''] absolute w-full h-full transition-all duration-300 bg-gradient-to-t mix-blend-multiply;
+      }
+      + .fit-image img {
+        @apply transition-all duration-300;
+      }
+      a:hover & {
+        @apply after:opacity-100 before:opacity-0;
+        + .fit-image img {
+          @apply scale-110;
+        }
+      }
+    }
+  }
+}

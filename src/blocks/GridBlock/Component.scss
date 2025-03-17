@@ -1,0 +1,17 @@
+// scss for the GridBlock component is not imported from the @payloadcms/ui package
+//make max width dynamic later
+.block {
+  &__grid {
+    &.columns {
+      &__01 {
+        grid-template-columns: fit-content(580px);
+      }
+      &__03 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+      }
+      // &__04 {
+
+      // }
+    }
+  }
+}

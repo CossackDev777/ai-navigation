@@ -1,0 +1,12 @@
+.sections {
+  &__home {
+    > div {
+      &:nth-child(odd) {
+        @apply bg-odd-row;
+      }
+      &:nth-child(even) {
+        @apply bg-even-row;
+      }
+    }
+  }
+}

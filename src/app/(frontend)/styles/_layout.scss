@@ -1,0 +1,33 @@
+.container {
+  .page__header & {
+    @apply px-4 md:px-6 lg:px-8 xl:px-12;
+  }
+  &__mid {
+    @apply mx-auto lg:max-w-[90%];
+  }
+  &__block {
+    @apply flex flex-col gap-16 justify-center items-center;
+  }
+}
+.archive {
+  &__header {
+    @apply h-[30vh] flex items-center justify-center w-full;
+    &_title {
+      &.en {
+        @apply text-page-h1-en font-title font-bold uppercase bg-gradient-to-bl from-primary to-third bg-clip-text text-transparent;
+      }
+    }
+  }
+  &__posts {
+    @apply pb-12 md:pb-20;
+  }
+  &__rangecounts {
+    @apply text-p-xs sm:text-p-sm;
+  }
+  &__controls {
+    @apply flex gap-4 items-center flex-col md:flex-row md:justify-between mb-6;
+  }
+  &__rangecounts {
+    @apply max-md:hidden;
+  }
+}

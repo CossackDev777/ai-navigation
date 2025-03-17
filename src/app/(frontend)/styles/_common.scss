@@ -1,0 +1,75 @@
+.header__main {
+  // $selector: #{&};
+
+  + * {
+    @apply pt-16 lg:pt-20;
+  }
+
+  // &_logo {
+  //   &.is_open {
+  //     @apply fixed;
+  //   }
+  // }
+}
+.page {
+  &__title {
+    @apply text-post-h1 font-bold bg-gradient-to-bl from-primary to-third bg-clip-text text-transparent;
+    &_en {
+      @apply text-page-h2 font-title font-bold lg:text-[3rem];
+      + h1 {
+        @apply text-page-h1 font-bold tracking-wider font-ja;
+      }
+    }
+  }
+  &__header {
+    @apply py-8 lg:py-16;
+    &_catchphrase {
+      .page__header & {
+        @apply mx-0 px-0;
+      }
+      p {
+        @apply font-noto text-p-sm lg:text-p-xs;
+      }
+    }
+  }
+  &__content {
+    .block__content {
+      h3 {
+        &:not(:first-child) {
+          @apply mt-12;
+        }
+      }
+    }
+  }
+  &__sections {
+    p {
+      @apply font-noto;
+    }
+  }
+}
+.title {
+  &__h2 {
+    &_en {
+      @apply font-title text-page-h2 font-bold leading-tight;
+      + .sec_subtitle {
+        @apply text-page-h1 tracking-wider leading-normal;
+      }
+    }
+  }
+}
+.archive {
+  &__titling {
+    @apply flex flex-col gap-8 items-center;
+  }
+  &__block {
+    @apply flex flex-col gap-10 py-8 md:py-24;
+  }
+  &__button {
+    @apply flex-none relative w-auto;
+  }
+}
+.post__side {
+  .post__list {
+    @apply h-full;
+  }
+}

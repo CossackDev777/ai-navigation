@@ -1,0 +1,31 @@
+.header {
+  &__main {
+    @apply py-2.5 text-basic fixed w-full left-0 right-0 top-0 z-[9999] transition-all duration-300 ease-in-out delay-150;
+
+    &[data-theme='dark'] {
+      &:not(.is_open) {
+        @apply text-white;
+      }
+    }
+    // &[data-theme='light'] {
+    //   @apply bg-white shadow-md;
+    // }
+    &.is_scrolling {
+      @apply max-lg:bg-white -translate-y-[100%] opacity-0;
+      &.is_scroll_up,
+      &.is_open {
+        @apply translate-y-0 opacity-100;
+      }
+    }
+    &.is_open {
+      @apply bg-white w-full h-full;
+    }
+
+    &_inner {
+      @apply py-0 flex justify-between;
+      // [data-theme='light'] & {
+      //   @apply bg-white shadow-md;
+      // }
+    }
+  }
+}

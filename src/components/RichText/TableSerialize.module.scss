@@ -1,0 +1,32 @@
+.table {
+  &_cell {
+    @apply p-2 font-noto border-border border-r;
+    &:first-child {
+      @apply border-l;
+    }
+    p {
+      @apply m-0;
+    }
+  }
+  &_tr {
+    @apply border-border;
+    &:first-child {
+      @apply border-t;
+    }
+    &:last-child {
+      @apply border-b;
+    }
+    .th {
+      &:first-child {
+        @apply max-md:min-w-[110px] sticky left-0 top-0 bg-muted after:content-[''] after:absolute after:inset-0 after:z-[-1];
+        &:after {
+          @apply bg-muted border-border border-l border-r w-full h-full;
+          box-sizing: content-box;
+        }
+      }
+    }
+  }
+}
+.th {
+  @apply bg-muted/80;
+}

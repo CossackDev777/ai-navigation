@@ -1,0 +1,98 @@
+@mixin nav-transition {
+  @apply transition-all duration-300;
+}
+
+.nav {
+  &__inline {
+    @apply flex gap-4 items-center;
+    &_item {
+      @apply inline-flex;
+    }
+    &_link {
+      @apply hover:no-underline;
+    }
+    &_mobile {
+      @apply flex-col w-full gap-0 border-third border-t;
+      li {
+        @apply w-full;
+        a {
+          @apply w-full py-6 px-6 md:px-6 border-b border-border;
+          header[data-theme='dark'] & {
+            @apply border-border-foreground;
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    $selector: #{&};
+    @apply hidden lg:flex gap-8 items-center;
+    &_links {
+      width: min-content;
+      height: min-content;
+      @apply gap-0 lg:p-2.5 lg:rounded-[160px] max-lg:w-full;
+
+      li {
+        @apply lg:h-10;
+        a {
+          @apply flex flex-row items-center lg:px-5 lg:justify-center lg:h-full;
+        }
+      }
+
+      header & {
+        @apply lg:bg-white lg:shadow-md transition-all duration-300;
+      }
+      header[data-theme='dark'].is_scrolling & {
+        a {
+          @apply text-primary-foreground;
+        }
+      }
+      header[data-theme='dark']:not(.is_scrolling) & {
+        @apply lg:bg-third-foreground;
+        a {
+          @apply text-primary-foreground lg:text-primary lg:hover:text-third;
+        }
+      }
+    }
+
+    &.is_open {
+      @apply fixed flex flex-col w-full bg-white left-0 right-0 top-16 bottom-0;
+    }
+    &_open {
+      @apply block lg:hidden size-8 md:size-10 cursor-pointer fixed z-[9999] right-2.5 top-2.5;
+      &_btn {
+        @apply flex flex-col items-start justify-center w-full h-full;
+        &.is_open {
+          @apply items-center;
+        }
+        > span {
+          @include nav-transition;
+          @apply inline-block h-[2px] bg-current;
+          &:nth-child(2) {
+            @apply my-1;
+          }
+        }
+      }
+    }
+    #{$selector} {
+      &_link {
+        @include nav-transition;
+        @apply font-semibold text-common tracking-wide;
+        header:not([data-theme='dark']) & {
+          @apply text-basic hover:text-primary;
+        }
+        header[data-theme='dark'] & {
+          @apply hover:text-third-foreground;
+        }
+      }
+    }
+  }
+}
+.btn__primaryex {
+  header[data-theme='dark'] & {
+    @apply text-primary before:from-primary-foreground before:to-third-foreground after:from-secondary-foreground after:to-primary-foreground;
+  }
+  header[data-theme='dark']:not(.is_scrolling) & {
+    @apply lg:text-primary-foreground lg:before:to-light-20 lg:before:from-light-10 lg:hover:after:to-primary lg:hover:after:from-secondary;
+  }
+}

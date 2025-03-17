@@ -1,0 +1,33 @@
+.step-list {
+  @apply flex list-none p-0 m-0 gap-4 lg:gap-8;
+
+  &__item {
+    @apply flex-1 text-center flex flex-col gap-3 items-center;
+  }
+
+  &__image {
+    @apply max-w-20 p-4 bg-light-20 rounded-full;
+
+    img {
+      @apply max-w-full h-auto mx-auto;
+    }
+  }
+  &.dark {
+    .step-list__image {
+      @apply bg-primary text-primary-foreground;
+    }
+  }
+  &__content {
+    @apply flex flex-col gap-2 items-center;
+  }
+  p {
+    @apply leading-[1.35];
+  }
+  &__title {
+    @apply m-0 font-bold text-p-sm text-basic;
+  }
+
+  &__text {
+    @apply m-0 text-p-xs text-neutral-600 whitespace-pre-wrap;
+  }
+}

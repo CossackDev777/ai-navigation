@@ -1,0 +1,114 @@
+[
+    {
+        "industry": "物流業界",
+        "slug": "logistics",
+        "image": {
+          "id": "1",
+          "alt": "物流業界",
+          "filename": "ant-rozetsky-SLIFI67jv5k-unsplash",
+          "url": "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "relation": "logistics"
+        },
+        "posts": [
+            {
+                "label": "課題",
+                "slug": "issue",
+                "value": "配送ルートが<strong>非効率</strong>で、<strong>コストが増大</strong>していた。"
+            },
+            {
+                "label": "解決",
+                "slug": "solution",
+                "value": "「Google Maps API」や「Route Optimization AI」などのルート最適化アルゴリズムを導入。AIがリアルタイムで交通状況や配送先の距離を計算し、最短ルートを自動生成。配送スケジュールを動的に調整することで、燃料消費を削減し、ドライバーの稼働時間も効率化。"
+            },
+            {
+                "label": "成果",
+                "slug": "result",
+                "value": "<strong>配送コストを20％削減し、納期遵守率が30％向上。</strong>"
+            }
+        ]
+    },
+    {
+        "industry": "小売業界",
+        "slug": "retail",
+        "image": {
+          "id": "2",
+          "alt": "小売業界",
+          "filename": "ant-rozetsky-SLIFI67jv5k-unsplash",
+          "url": "https://images.unsplash.com/photo-1737991959098-abdff2d5bb7a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "relation": "retail"
+        },
+        "posts": [
+            {
+                "label": "課題",
+                "slug": "issue",
+                "value": "在庫管理が不十分で、欠品や余剰在庫が発生していた。"
+            },
+            {
+                "label": "解決",
+                "slug": "solution",
+                "value": "「Blue Yonder」や「SAP Integrated Business Planning」などの需要予測ソリューションを活用。過去の販売データや季節性のトレンド、キャンペーン情報をAIが分析し、商品の需要を予測。"
+            },
+            {
+                "label": "成果",
+                "slug": "result",
+                "value": "<strong>需要予測の精度を高めることで、在庫切れを防ぎ、在庫回転率を向上。</strong>"
+            }
+        ]
+    },
+    {
+        "industry": "製造業",
+        "slug": "manufacturing",
+        "image": {
+          "id": "3",
+          "alt": "製造業界",
+          "filename": "ant-rozetsky-SLIFI67jv5k-unsplash",
+          "url": "https://images.unsplash.com/photo-1738162698248-94acbdca27d1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "relation": "manufacturing"
+        },
+        "posts": [
+            {
+                "label": "課題",
+                "slug": "issue",
+                "value": "生産ラインでの不良品率が高く、コストがかさんでいた。"
+            },
+            {
+                "label": "解決",
+                "slug": "solution",
+                "value": "「TensorFlow」や「OpenCV」を活用した画像認識AIシステムを導入。生産ラインに設置したカメラで製品をリアルタイムにスキャンし、AIが不良品を検出。"
+            },
+            {
+                "label": "成果",
+                "slug": "result",
+                "value": "<strong>不良品率を大幅に低減し、手作業の検査を削減。これにより、人件費を削減し、生産効率を向上。</strong>"
+            }
+        ]
+    },
+    {
+        "industry": "飲食業界",
+        "slug": "food-service",
+        "image": {
+          "id": "4",
+          "alt": "飲食業界",
+          "filename": "ant-rozetsky-SLIFI67jv5k-unsplash",
+          "url": "https://images.unsplash.com/photo-1737994872505-385ecc9a06e7?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "relation": "food-service"
+        },
+        "posts": [
+            {
+                "label": "課題",
+                "slug": "issue",
+                "value": "メニューの人気度や顧客の嗜好を把握できていなかった。"
+            },
+            {
+                "label": "解決",
+                "slug": "solution",
+                "value": "「Tableau」や「Power BI」などのデータ可視化ツールを活用。POSシステムから取得した売上データをAIが分析し、メニューごとの売上傾向や顧客嗜好を特定。"
+            },
+            {
+                "label": "成果",
+                "slug": "result",
+                "value": "<strong>人気メニューを強化するプロモーションを実施し、不人気メニューを削減。結果として、売上が15％向上し、顧客満足度も向上。</strong>"
+            }
+        ]
+    }
+]

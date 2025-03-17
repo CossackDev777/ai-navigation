@@ -1,0 +1,104 @@
+.cslider {
+  @apply w-full flex flex-col relative overflow-hidden lg:flex-row;
+
+  &__media {
+    picture,
+    img {
+      @apply w-full h-full object-cover;
+    }
+    picture {
+      @apply block;
+    }
+  }
+  &__col {
+    @apply w-full;
+    &_images {
+      @apply max-sm:absolute max-sm:left-0 max-sm:top-0 max-sm:after:content-[''] max-sm:before:content-[''] z-0;
+      &:before,
+      &:after {
+        @apply absolute top-0 left-0 right-0 w-full h-full;
+      }
+      &:before {
+        @apply bg-dark-gradient-20 mix-blend-multiply opacity-60 z-[2];
+      }
+      &:after {
+        @apply bg-dark-gradient-20 mix-blend-hard-light;
+      }
+    }
+    &_content {
+      @apply py-8 sm:p-8 lg:p-12 lg:pr-16 xl:pr-20;
+      .sec_caption {
+        @apply max-sm:text-light-20;
+      }
+      .block__section_title {
+        @apply px-6 sm:px-0 relative max-sm:text-white;
+        strong {
+          @apply max-sm:text-white;
+        }
+      }
+    }
+  }
+  .card__content {
+    @apply bg-white rounded-2xl shadow-2xl shadow-secondary/50 py-8 px-card sm:p-8 lg:-ml-20 lg:p-10;
+  }
+  &__nav {
+    @apply font-noto inline-flex h-9 items-center text-secondary w-full justify-start rounded-none border-b bg-transparent p-0 max-sm:pb-4 max-sm:px-3;
+    &-item {
+      @apply inline-flex items-center justify-center whitespace-nowrap py-1 text-card-vert ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-secondary shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-primary data-[state=active]:shadow-none max-sm:font-normal max-sm:text-light-20 max-sm:data-[state=active]:font-semibold max-sm:data-[state=active]:border-b-white max-sm:data-[state=active]:text-white;
+    }
+  }
+}
+
+.case__list {
+  @apply flex flex-col gap-4 sm:gap-6;
+  &-item {
+    @apply flex items-start gap-1.5 xs:gap-3 flex-col xs:flex-row;
+
+    .label {
+      @apply w-10 text-center text-p-xs font-medium bg-third text-white inline-block px-2 py-1 rounded-full;
+      &__solution {
+        @apply bg-primary;
+      }
+      &__result {
+        @apply bg-gradient-to-r from-third to-primary;
+      }
+    }
+    .value {
+      @apply flex-1;
+      &__issue {
+        @apply text-post-h3 font-semibold;
+      }
+      &__result {
+        @apply text-card-vert;
+      }
+      strong {
+        @apply bg-gradient-to-bl from-primary to-third bg-clip-text text-transparent font-semibold;
+      }
+    }
+  }
+}
+
+.fade-in {
+  animation: fade-out 1s ease-out forwards;
+  &-active {
+    animation: fade-in 1s ease-out forwards;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

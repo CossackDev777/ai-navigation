@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g><g transform="matrix(3.4482758620689653,0,0,3.4482758620689653,5.684341886080802e-14,5.684341886080802e-14)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="290" height="290"><svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" xmlns:v="https://vecta.io/nano"><defs><clipPath id="A"><path fill="none" d="M0 0h290v290H0z"></path></clipPath></defs><g clip-path="url(#A)"><path d="M138.68 43.9c15-2.34 30.08 4 37.49 17.34 12.82 23.06 18.45 57.64 30.46 81.91 2.44 15.14-7.05 11.79-16.58 12.93-47.65 5.72-44.28 36.72-60.62 70.19-18.69 38.27-76.26 17.97-66.73-23.43l50.68-139.1c4.47-8.85 15.28-18.28 25.29-19.85z" fill="#2a2a96"></path><path d="M190.3,175.66c45.83-4.41,52.06,65.47,8.86,70.57-49.77,5.88-55.19-66.12-8.86-70.57Z" fill="#4f60cd"></path></g></svg></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1049)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(2.413793103448276,0,0,2.413793103448276,150,150)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="290" height="290"><svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" xmlns:v="https://vecta.io/nano"><defs><clipPath id="A"><path fill="none" d="M0 0h290v290H0z"></path></clipPath><clipPath id="SvgjsClipPath1049"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs><g clip-path="url(#A)"><path d="M138.68 43.9c15-2.34 30.08 4 37.49 17.34 12.82 23.06 18.45 57.64 30.46 81.91 2.44 15.14-7.05 11.79-16.58 12.93-47.65 5.72-44.28 36.72-60.62 70.19-18.69 38.27-76.26 17.97-66.73-23.43l50.68-139.1c4.47-8.85 15.28-18.28 25.29-19.85z" fill="#2a2a96"></path><path d="M190.3,175.66c45.83-4.41,52.06,65.47,8.86,70.57-49.77,5.88-55.19-66.12-8.86-70.57Z" fill="#4f60cd"></path></g></svg></svg></g></g></svg></g></svg>
