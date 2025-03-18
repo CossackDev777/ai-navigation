@@ -13,7 +13,7 @@ const NEXT_PUBLIC_SERVER_URL =
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: false,
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'], // Use modern formats for better optimization
     remotePatterns: [
       {
